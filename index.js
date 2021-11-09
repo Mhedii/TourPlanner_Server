@@ -1,7 +1,7 @@
 const express = require('express');
 const { MongoClient, Collection } = require('mongodb');
 const cors = require('cors');
-// require("dotenv").config();
+require("dotenv").config();
 
 const ObjectId = require("mongodb").ObjectId;
 
@@ -93,29 +93,10 @@ client.connect(err => {
 });
 
 
-// app.get('/', (req, res) => {
-//     res.send('HI');
-// });
-// const users = [
-//     { id: 0, name: 'Shabana', email: 'Shabana@gmail.com', phone: '01788888888' },
-//     { id: 1, name: 'Shabnoor', email: 'Shabnoor@gmail.com', phone: '01788888888' },
-//     { id: 2, name: 'Shrabonti', email: 'Shrabonti@gmail.com', phone: '01788888888' },
-//     { id: 3, name: 'Suchorita', email: 'Suchorita@gmail.com', phone: '01788888888' },
-//     { id: 4, name: 'Soniya', email: 'Soniya@gmail.com', phone: '01788888888' },
-//     { id: 5, name: 'Susmita', email: 'Susmita@gmail.com', phone: '01788888888' },
-// ]
+app.get('/', (req, res) => {
+    res.send('HI');
+});
 
-// app.get('/users', (req, res) => {
-//     const search = req.query.search;
-//     // use query parameter
-//     if (search) {
-//         const searchResult = users.filter(user => user.name.toLocaleLowerCase().includes(search));
-//         res.send(searchResult);
-//     }
-//     else {
-//         res.send(users)
-//     }
-// });
 
 // // app.METHOD
 // app.post('/users', (req, res) => {
