@@ -116,6 +116,7 @@ app.get('/', (req, res) => {
 // })
 
 
-app.listen(port, () => {
-    // console.log('yuu')
-})
+// app.listen(port, () => {
+//     // console.log('yuu')
+// })
+app.listen(process.env.PORT || port);
